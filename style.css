@@ -123,14 +123,18 @@ ol {
 
 /* helper classes */
 
-/* From: Lea Verou - https://twitter.com/LeaVerou/status/1045768279753666562  
+/* From: Lea Verou - https://twitter.com/LeaVerou/status/1045768279753666562
 		Gets rid of the annoying outline for mouse users but preserves it for keyboard users,
 		and is ignored by browsers that don’t support :focus-visible.
 */
-:focus:not(:focus-visible) { outline: none }
+:focus:not(:focus-visible) {
+	outline: none
+}
 
 /* From Adam Argyle - https://twitter.com/argyleink/status/1316143837903896577 */
-:is(h1,h2,h3,h4,h5,h6).tight { margin-block: 0; }
+:is(h1, h2, h3, h4, h5, h6).tight {
+	margin-block: 0;
+}
 
 .js-hide {
 	display: none;
@@ -145,7 +149,6 @@ ol {
 }
 
 
- 
 /* https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034 */
 .sr-only {
 	border: 0 !important;
@@ -163,7 +166,7 @@ ol {
 
 /*
 	Use in conjunction with .sr-only to only display content when it's focused.
-	@note Useful for skip links 
+	@note Useful for skip links
 	@see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
 	@note Based on a HTML5 Boilerplate technique, included in Bootstrap
 	@note Fixed a bug with position: static on iOS 10.0.2 + VoiceOver
@@ -216,6 +219,11 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+.page-header,
+.page-footer {
+	text-align: center;
 }
 
 /**** 480px/30em ****/
